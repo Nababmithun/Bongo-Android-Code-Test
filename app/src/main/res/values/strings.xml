@@ -5,7 +5,7 @@
 
 <resources>
     <string name="app_name">&appname;</string>
-    <string name="the_moviedb_api_key">4113f3ad734e747a5b463cde8c55de42</string>
+    <string name="the_moviedb_api_key">c37d3b40004717511adb2c1fbb15eda4</string>
 
     // BUTTON
     <string name="cancel">Cancel</string>

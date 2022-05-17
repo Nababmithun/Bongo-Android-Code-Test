@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.movieplayer.base_mvvp">
+          package="com.movieplayer.base_mvvm">
 
     <!-- NETWORK -->
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -38,7 +38,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus"/>
 
     <application
-            android:name=".base.BaseApplication"
+            android:name="com.movieplayer.base_mvvm.base.BaseApplication"
             android:allowBackup="true"
             android:fullBackupContent="true"
             android:hardwareAccelerated="true"
@@ -53,7 +53,7 @@
 
         <!-- ***  Location service -->
         <service
-                android:name=".loc.LocationService"
+                android:name="com.movieplayer.base_mvvm.loc.LocationService"
                 android:enabled="true"/>
 
         <!-- ***  For retrieving the image captured by the camera -->
@@ -69,7 +69,7 @@
 
         <!-- *** Push notification service -->
         <service
-                android:name=".push.FcmMessagingService"
+                android:name="com.movieplayer.base_mvvm.push.FcmMessagingService"
                 android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
@@ -94,7 +94,7 @@
                 android:name="org.apache.http.legacy"
                 android:required="false"/>
 
-        <activity android:name=".ui.activity.movie.PopularMoviesActivity">
+        <activity android:name="com.movieplayer.base_mvvm.ui.activity.movie.PopularMoviesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -102,9 +102,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.activity.movie_details.MovieDetailsActivity"/>
+        <activity android:name="com.movieplayer.base_mvvm.ui.activity.movie_details.MovieDetailsActivity"/>
 
-        <activity android:name=".ui.activity.youtube_player.YoutubePlayerActivity"
+        <activity android:name="com.movieplayer.base_mvvm.ui.activity.youtube_player.YoutubePlayerActivity"
                   android:theme="@style/NoActionBar"/>
     </application>
 

@@ -1,0 +1,2 @@
+# Referenced at C:\Users\HP\Desktop\Bongo Android Code Test\app\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:52
+-keep class com.movieplayer.base_mvvm.base.BaseApplication { <init>(...); }

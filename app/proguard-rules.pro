@@ -349,8 +349,8 @@
 # CirlceImageView- No need pro guard rules..
 # --------------------------------------------------
 # Here include the POJO's that have you have created for mapping JSON response to POJO in Retrofit/Application classes that will be serialized/deserialized over Gson
--keep class com.movieplayer.base_mvvp.data.network.api_response.** { *; }
--keep class com.movieplayer.base_mvvp.data.model.** { *; }
+-keep class com.movieplayer.base_mvvm.data.network.api_response.** { *; }
+-keep class com.movieplayer.base_mvvm.data.model.** { *; }
 
 # PDF VIEWER
 -keep class com.shockwave.**
